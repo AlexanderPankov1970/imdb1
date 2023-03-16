@@ -1,7 +1,8 @@
-import Header from "@/components/Header";
-import NavBar from "@/components/NavBar";
 import "./globals.css";
 import Providers from "./Providers";
+import Header from "@/components/Header";
+import NavBar from "@/components/NavBar";
+import SearchBox from "@/components/SearchBox";
 
 export const metadata = {
   title: "IMDB1 project",
@@ -18,6 +19,7 @@ export default function RootLayout({ children }) {
           {/* NavBar */}
           <NavBar />
           {/* SearchBox */}
+          <SearchBox />
           {children}
         </Providers>
       </body>
